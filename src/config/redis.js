@@ -5,7 +5,7 @@ const redisClient = redis.createClient({
     password: process.env.REDIS_KEY,
     socket: {
         host: process.env.REDIS_HOST,
-        port: 16471
+        port: process.env.REDIS_PORT
     }
 });
 
